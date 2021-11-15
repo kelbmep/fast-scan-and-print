@@ -1,7 +1,4 @@
-﻿// CMakeProject2.cpp: определяет точку входа для приложения.
-//
-
-#include "CMakeProject2.h"
+﻿#include "CMakeProject2.h"
 
 void print(int num)
 {

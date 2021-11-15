@@ -3,6 +3,7 @@
 
 #pragma once
 
-#include <iostream>
+#include <cstdlib>
+#include <cstdio>
 
 // TODO: установите здесь ссылки на дополнительные заголовки, требующиеся для программы.
