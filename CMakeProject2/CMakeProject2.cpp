@@ -43,13 +43,9 @@ int scan(int& str)
     while(!stop)
     {
         char c = getchar();
-        if (c == '-' && first)
+        if ((c == '-' || c == '+') && first)
         {
-            neg = true;
-        }
-        else if (c == '+' && first)
-        {
-
+            neg = c == '-';
         }
         else if (c >= '0' && c <= '9')
         {
@@ -70,9 +66,9 @@ int scan(int& str)
     {
         num *= -1;
     }
-    str = num;
     if (error)
         return EXIT_FAILURE;
+    str = num;
     return EXIT_SUCCESS;
 }
 
